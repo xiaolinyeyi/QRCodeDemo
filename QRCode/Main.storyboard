@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FVM-dK-xq7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Code View Controller-->
+        <scene sceneID="5lJ-ai-2Uj">
+            <objects>
+                <viewController id="FVM-dK-xq7" customClass="QRCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OTg-wQ-Yua"/>
+                        <viewControllerLayoutGuide type="bottom" id="cAc-c1-3el"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IOS-k5-hg7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-nJ-Swr">
+                                <rect key="frame" x="20" y="450" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bb8-Vb-Bgv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cAc-c1-3el" firstAttribute="top" secondItem="hjj-nJ-Swr" secondAttribute="bottom" constant="100" id="TH3-JS-GXe"/>
+                            <constraint firstItem="hjj-nJ-Swr" firstAttribute="centerX" secondItem="IOS-k5-hg7" secondAttribute="centerX" id="ZSq-K6-a79"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hjj-nJ-Swr" secondAttribute="trailing" id="abm-e9-EsH"/>
+                            <constraint firstItem="hjj-nJ-Swr" firstAttribute="leading" secondItem="IOS-k5-hg7" secondAttribute="leadingMargin" id="cnC-RY-Zms"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="valueLabel" destination="hjj-nJ-Swr" id="X9M-gV-L8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXf-J1-udr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="349"/>
+        </scene>
+    </scenes>
+</document>
